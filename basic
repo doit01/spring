@@ -1,3 +1,10 @@
+	 https://spring.io/guides/gs/spring-cloud-loadbalancer/
+	 https://spring.io/guides/gs/caching/
+	 https://spring.io/guides/gs/integration/
+	 https://spring.io/guides/topicals/spring-security-architecture/
+	 https://spring.io/guides/gs/integration/
+	 
+	 
 	 * prototype：多实例的：ioc容器启动并不会去调用方法创建对象放在容器中。
 	 * 			每次获取的时候才会调用方法创建对象；
 	 * singleton：单实例的（默认值）：ioc容器启动会调用方法创建对象放到ioc容器中。
