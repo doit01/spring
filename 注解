@@ -1,0 +1,15 @@
+	@PrePersist
+	@PreUpdate
+  @PostConstruct
+  public void init() {
+
+		IntStream.range(0, 41).forEach(index -> {
+			userManagement.register(new Username("user" + index), Password.raw("foobar"));
+		});
+	}
+  
+  rejectIfEmptyOrWhitespace(errors, "username", "user.username.empty");
+  import static org.springframework.validation.ValidationUtils.*;
+  
+  @EqualsAndHashCode(of = "id")
+  
